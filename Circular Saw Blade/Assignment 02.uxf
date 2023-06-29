@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>30</y>
+      <w>320</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>CircularSawBlade
+--
+_+EXPECTED_DIAMETER:double=7.25_
+_+EXPECTED_KERF:double = 0.059_
+-diameter:double
+-kerf:double
+--
++CircularSawBlade()
++CircularSawBlade(double diameter, double kerf)
++getDiameter():double
++setDiameter(double diameter):void
++getKerf():double
++setKerf(double kerf):void
++toString():String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>30</y>
+      <w>380</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CircularSawBladeVerifier
+--
+_+EPSILON:double=0.015625_
+--
+-CircularSawBladeVerifier()
+_+isDiameterInTolerance(CircularSawBlade blade):boolean_
+_+isKerfInTolerance(CircularSawBlade blade):boolean_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>300</y>
+      <w>290</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-User()
+_+inputInteger():int_
+_+inputInteger(String message):int_
+_+inputDouble():double_
+_+inputDouble(String message):double_
+_+inputString():String_
+_+inputString(String message):String_
+_+inputPositiveDouble(String prompt):double_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>240</y>
+      <w>340</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Assignment 02
+--
+_+main(String[] args):void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>550</x>
+      <y>370</y>
+      <w>230</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>UML Class Diagram by Ting Wang</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
